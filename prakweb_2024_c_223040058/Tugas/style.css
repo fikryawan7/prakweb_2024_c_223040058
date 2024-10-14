@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #007bff; /* Warna latar belakang header */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin: 5px 0 0;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+/* Styling untuk galeri */
+.gallery {
+  display: flex; /* Menggunakan flexbox untuk responsivitas */
+  flex-wrap: wrap; /* Membungkus elemen kolom */
+  justify-content: space-between; /* Memberi jarak antar kolom */
+}
+
+.gallery img {
+  width: calc(33.333% - 10px); /* Tiga gambar dalam satu baris dengan margin */
+  height: auto;
+  border-radius: 5px; /* Menambahkan sudut membulat pada gambar */
+  margin-bottom: 10px; /* Jarak di bawah gambar */
+}
+
+/* Styling untuk footer */
+footer {
+  padding: 20px 0;
+  background-color: #007bff;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  text-align: center; /* Memusatkan teks footer */
+}
+
+/* Responsivitas untuk layar lebih kecil */
+@media (max-width: 768px) {
+  .gallery img {
+    width: calc(50% - 10px); /* Dua gambar dalam satu baris */
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery img {
+    width: 100%; /* Satu gambar dalam satu baris */
+  }
+}
